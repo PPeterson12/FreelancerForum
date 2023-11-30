@@ -1,5 +1,9 @@
 const spanCount = document.querySelector("#spanCounter");
 
+const spanAverageCost = document.querySelector("#spanAverageCost");
+
+const ul = document.querySelector("ul");
+
 const names = [
   "Dr. Slice",
   "Dr. Pressure",
@@ -13,7 +17,4 @@ const names = [
 
 const occupations = ["gardener", "programmer", "teacher", "gardner"];
 
-const freelancers = [
-  { name: "Dr. Slice", price: 25, occupation: "gardener" },
-  { name: "Dr. Pressure", price: 51, occupation: "programmer" },
-];
+console.log(names, occupations);
