@@ -20,7 +20,7 @@ const names = [
   "Prof. Goose",
 ];
 
-const occupations = ["gardener", "programmer", "teacher", "gardner"];
+const occupation = ["gardener", "programmer", "teacher", "gardner"];
 
 function render() {
   spanFree.innerHTML = freeLancer.length;
@@ -37,7 +37,7 @@ function render() {
     .map((freeLancer) => {
       return `
       <li>
-        ${freeLancer.name} is ${freeLancer.occupation} and cost $${freeLancer.price}
+        ${freeLancer.name} is ${freeLancer.occupation} and cost $${freeLancer.price} an hour
       </li>
     `;
     })
@@ -51,14 +51,14 @@ render();
 const interval = setInterval(() => {
   const nameIndex = Math.floor(Math.random() * names.length);
   const name = names[nameIndex];
-  const occupationIndex = Math.floor(Math.random() * occupations.length);
-  const jobs = occupations[occupationIndex];
+  const jobIndex = Math.floor(Math.random() * occupation.length);
+  const occupationName = occupation[jobIndex];
 
-  const cost = Math.ceil(Math.random() * 10);
+  const cost = Math.ceil(Math.random() * 100);
   const randomProduct = {
     name: name,
-    occupations: occupations,
-    cost: cost,
+    occupation: occupationName,
+    price: cost,
   };
   freeLancer.push(randomProduct);
   render();
