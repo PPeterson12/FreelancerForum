@@ -20,7 +20,13 @@ const names = [
   "Prof. Goose",
 ];
 
-const occupation = ["gardener", "programmer", "teacher", "gardner"];
+const occupation = [
+  "gardener",
+  "programmer",
+  "teacher",
+  "fighter",
+  "lion tamer",
+];
 
 function render() {
   spanFree.innerHTML = freeLancer.length;
